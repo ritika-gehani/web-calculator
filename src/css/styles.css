@@ -1,0 +1,115 @@
+/* Reset default margins & center everything */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Calculator Box */
+.calculator {
+    width: 90%; /* Makes it flexible on different screens */
+    max-width: 350px; /* Limits size on larger screens */
+    height: auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Display Screen */
+.display {
+    background: #fff;
+    padding: 15px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* General Button Styles */
+button {
+    font-size: 1.5em;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Number Buttons (Default) */
+button:not(:nth-child(4n)) {
+    background: #eee;
+}
+
+/* Operator Buttons (+, -, *, /) */
+button:nth-child(4n) {
+    background: #ff9500;
+    color: white;
+}
+
+/* Special Buttons (Equal = and Clear C) */
+button:last-child,
+button:nth-last-child(2) {
+    background: #4caf50; /* Green color */
+    color: white;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #ddd; /* Light gray hover */
+    transform: scale(1.05); /* Slightly enlarges button */
+}
+
+/* Operator Button Hover */
+button:nth-child(4n):hover {
+    background-color: #ffb74d; /* Lighter orange */
+}
+
+/* Equal & Clear Button Hover */
+button:last-child:hover,
+button:nth-last-child(2):hover {
+    background-color: #66bb6a; /* Brighter green */
+}
+
+/* Button Press Effect */
+button:active {
+    transform: scale(0.9); /* Shrinks when pressed */
+    opacity: 0.7; /* Slight transparency */
+    transition: 0.1s;
+}
+
+/* Responsive Design - Adjustments for Small Screens */
+@media (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        padding: 15px;
+    }
+    .display {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    button {
+        font-size: 1.2em;
+        padding: 12px;
+    }
+    .buttons {
+        gap: 8px;
+    }
+}

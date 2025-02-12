@@ -14,15 +14,15 @@ function handleNumberClick(value) {
         display.textContent = firstNumber;
     } else {
         secondNumber += value;
-        display.textContent = secondNumber;
+        display.textContent = firstNumber + operator + secondNumber;
     }
-    display.textContent = firstNumber + operator + secondNumber;
 }
 
 // Function to handle operator button clicks
 function handleOperatorClick(value) {
     if (firstNumber !== "") {
         operator = value;
+        display.textContent = firstNumber + operator;
     }
 }
 
