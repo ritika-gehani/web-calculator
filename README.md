@@ -1,6 +1,6 @@
 # 🧮 Modern Web Calculator
 
-A sleek, responsive calculator built with vanilla JavaScript and CSS Grid. Perfect for quick calculations with a beautiful, modern interface.
+A responsive calculator built with vanilla JavaScript and CSS Grid. Perfect for quick calculations with a beautiful, modern interface.
 
 ## ✨ Features
 
@@ -16,15 +16,14 @@ A sleek, responsive calculator built with vanilla JavaScript and CSS Grid. Perfe
 - HTML5
 - CSS3 (Grid & Flexbox)
 - Vanilla JavaScript
-- Love for clean code ❤️
 
 ## 🚀 Live Demo
 
-[Try the calculator here](YOUR_VERCEL_URL)
+[Try the calculator here](https://web-calculator-tau-two.vercel.app)
 
 ## 📱 Preview
 
-![Calculator Preview](preview.png) <!-- You can add a screenshot later -->
+[![Calculator Demo](https://img.youtube.com/vi/0086iENz9Q4/0.jpg)](https://youtube.com/shorts/0086iENz9Q4)
 
 ## 🏃‍♂️ Running Locally
 
@@ -33,3 +32,12 @@ A sleek, responsive calculator built with vanilla JavaScript and CSS Grid. Perfe
 git clone https://github.com/yourusername/web-calculator.git
 ```
 2. Open `index.html` in your browser
+
+## 📦 Deployment
+
+This project is deployed on Vercel. To deploy your own version:
+
+1. Fork this repository
+2. Sign up on [Vercel](https://vercel.com)
+3. Import your repository
+4. Deploy! 🚀
